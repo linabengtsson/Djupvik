@@ -1,0 +1,402 @@
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* INDEX CSS */
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'Straatliches';
+    src: url(../fonts/Staatliches/Staatliches-Regular.ttf);
+}
+
+html{
+    font-size: 105%;
+}
+
+#container{
+    width: 100%;
+}
+
+header{
+    justify-content: center;
+    text-align: center;
+    background: url(../images/D-23_kopia_mini.jpg) no-repeat center; 
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin: 0.8rem;   
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Straatliches';
+    color: black;
+    font-size: 4rem;  
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    margin: 1.6rem;
+    color: black;
+}
+
+h3{
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+    margin: 1.2rem;
+}
+
+article, #classes, #story, #newsletter{
+    background-position-x: 1rem;
+}
+
+p{
+    font-family: Helvetica,  Arial,  sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+img{  
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+.img_text{
+    font-style: italic;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+nav{
+    padding: 1rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    font-size: 1.4rem;
+}
+
+nav ul li{
+    padding: 0.8rem;
+    margin: 0 auto;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:focus, nav a:hover, nav a:active {
+    text-decoration: underline;
+}
+
+nav a:focus{
+    outline: none;
+}
+
+a{
+    color: #3a678f;
+}
+
+table{
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+    padding: 0.3rem;
+}
+
+th{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+td{
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(183, 193, 215);
+}
+
+tr{
+    border: 1px solid black;
+}
+
+tr:nth-last-of-type(odd){
+    background-color: rgb(228, 239, 242);
+}
+
+dl{
+    font-family: Helvetica,  Arial,  sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+}
+
+dd{
+    padding-left: 2.4rem;
+}
+
+.form_class{
+    text-align: center;
+    background-color: rgb(242, 245, 245);
+    padding-top: 1rem;
+    margin: 1rem;
+}
+
+.form_radio {
+    text-align: center;
+}
+
+label{
+    font-family: Helvetica,  Arial,  sans-serif; 
+  }
+
+input[type=text], input[type=tel]{
+    width: 90%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #3a678f;
+    margin: 1rem auto;
+    padding: 0.6rem 0.8rem;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+input[type=radio]{
+    font-size: 2rem;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    height: 20px;
+    width: 20px;
+    padding: 1rem;
+  }
+
+aside p{
+    margin-top: 1rem;
+}
+
+footer{
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 250px) and (max-width: 600px){
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+     }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+      }
+      
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+
+    td:nth-of-type(1):before { content: "Förnamn"; }
+    td:nth-of-type(2):before { content: "Efternamn"; }
+    td:nth-of-type(3):before { content: "Email"; }
+    td:nth-of-type(4):before { content: "Telefon"; }
+        
+}
+
+@media (min-width: 700px) and (max-width:1100px){
+    aside{
+        float: right;
+        margin-right: 1rem;
+    }
+
+    p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h3 {
+        text-align: left;
+        padding-left: 3rem;
+    }
+
+    .form_radio {
+        text-align: center;
+    }
+
+    .form_class{
+        margin: 2rem 5rem 1rem 5rem;
+    }
+
+    input[type=text], input[type=tel]{
+        width: 50%;
+    }
+
+    header h1{
+        font-size: 5rem;
+        padding-top: 2rem; 
+        padding-bottom: 2rem;        
+        margin-top: 3rem; 
+    }
+
+    header{
+        background: url(../images/D-23_kopia.jpg) no-repeat center;
+        margin: 3rem;
+        padding: 4rem;
+    }
+
+    nav ul{
+        font-size: 1.4rem;
+    }
+
+    article, #classes, #story, #newsletter{
+        background-position-x: 2rem;
+    }
+
+    td{
+        border: 1px solid black;
+    }
+}
+
+@media (min-width: 1101px) {
+    aside{
+        float: right;
+        margin-right: 1rem;
+    }
+
+    p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h3 {
+        text-align: left;
+        padding-left: 3.5rem;
+    }
+
+    .form_class{
+        margin: 2rem 6rem 1rem 6rem;
+    }
+
+    .form_radio {
+        text-align: center;
+    }
+
+    input[type=text], input[type=tel]{
+        width: 50%;
+    }
+
+    header h1{
+        margin-top: 3rem;
+        padding-top: 2rem; 
+        padding-bottom: 2rem;
+        font-size: 8rem; 
+        color: black; 
+    }
+
+    header{
+        background: url(../images/D-23_kopia.jpg) no-repeat center;
+        margin: 4rem 4rem 0rem 4rem;
+        padding: 6rem;
+    }
+
+    nav ul{
+        font-size: 1.4rem;
+    }
+
+    article, #classes, #story, #newsletter{
+        background-position-x: 2rem;
+    }
+
+    td{
+        border: 1px solid black;
+    }
+}

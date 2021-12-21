@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+    <head>
+        <title>Djupvik</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>  
+    </head>
+
+<body>
+    <div id="container">
+        <header>      
+            <h1>Djupviks hamn</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="../../index.html">Startsida</a> </li>
+                <li> <a href="history.html">Historia</a> </li>
+                <li> <a href="tourist.html">Turistmål</a> </li>
+                <li> <a href="harbor.html">Gästhamn</a> </li>
+                <li> <a href="members.html">Medlemsinfo</a> </li>
+                <li> <a href="contact.html">Kontakt</a> </li>
+                <li> <a href="english.html">English</a> </li>
+            </ul>
+        </nav>
+    
+        <main> 
+                <article>                   
+                    <h2>Kontaktuppgifter</h2>
+                    <p>Hamnfogde Bo Lautin, mobil 0707-920310</p>
+                    <p>Djupviks hamnförening</p>
+                    <p>c/o Ekholm</p>
+                    <p>Eksta Hägur 170</p>
+                    <p>623 54 Klintehamn</p>
+                </article>
+            
+            <section class="form_class">
+            <h2>Kontaktformulär</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="Heading">Rubrik för ärendet:</label>
+                    <input type="text" id="Heading" name="heading">
+                </p>
+                <p>
+                    <label for="Description">Beskrivning utav ärendet*:</label>
+                    <textarea name="comments" id="Description" rows="5" cols="30" placeholder="Beskriv ditt ärende..." required></textarea>
+                </p>
+                
+                    <h3 class="form_radio">Vad gäller ärendet?</h3>                
+                    <label><input type="radio" name="form-setup" value="boat"> Båtplats </label>
+                    <label><input type="radio" name="form-setup" value="member"> Medlem </label>
+                    <label><input type="radio" name="form-setup" value="other"> Övrigt </label>
+                
+                
+                    <h3 class="form_radio">Hur vill du bli kontaktad?</h3>                
+                    <label><input type="radio" name="form-setup" value="email"> Email </label>
+                    <label><input type="radio" name="form-setup" value="phone"> Telefon </label>
+                    <label><input type="radio" name="form-setup" value="none"> Inte alls </label>
+                
+                <p>
+                    <label for="Phone">Telefon:</label>
+                    <input type="tel" name="phone" id="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                </p>
+                <p>
+                    <label for="Form-email">Email:</label>
+                    <input type="text" id="Form-email" name="form-email">
+                </p> 
+                <p>
+                  <input type="Submit" name="submit" value="Submit&rarr;">
+                </p>
+              
+            </form>
+            </section>
+          </main>
+    
+          <footer>
+            <p> Copyright: Djupvikshamn.se, mailadress: info@djupvikshamn.se</p>
+          </footer>
+    </div>
+</body>
+</html>
+
+
+
